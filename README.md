@@ -13,3 +13,21 @@ All you'll need is a weighing scale.
 ## Technologies
 This project was built using ReactJS (frontend) and Django (backend).
 Bootstrap template was obtained from: https://www.creative-tim.com/product/argon-design-system-react
+
+## Installation
+```
+pip install django==3.2.5
+pip install djangorestframework==3.7.0
+pip install django-cors-headers==3.12.4
+
+npm install bootstrap jquery axios
+```
+
+## Usage
+```
+cd frontend
+npm start
+```
+
+## Useful links that deserve credit
+- Connect React frontend to Django backend: https://www.geeksforgeeks.org/how-to-connect-django-with-reactjs/
