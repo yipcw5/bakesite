@@ -3,7 +3,9 @@ import classnames from "classnames";
 
 import {
     Button,
-    Container
+    Container,
+    Col,
+    Row
 } from "reactstrap";
 
 class Home extends React.Component {
@@ -31,8 +33,17 @@ class Home extends React.Component {
                         </div>
                         <Container className="py-lg-md d-flex"> {/* Side padding + heading/paragraph split side by side */}
                             <div className="col px-0"> {/* Put paragraph below heading */}
-                                <h1 className="mb-0 text-white">Bakesite</h1>
-                                <Button color="primary" size="lg" type="button">Login/Register</Button>
+                            <Container className="shape-container d-flex align-items-center py-lg"> {/* Center paddings: */}
+                            <div className="col px-0">
+                            <Row className="align-items-center justify-content-center">
+                                <Col className="text-center" lg="6">
+                                    <h1 className="display-1 mb-0 text-white">Bakesite</h1>
+                                    <br/>
+                                    <Button color="neutral" size="lg" type="button">Login/Register</Button>
+                                </Col>
+                            </Row>
+                            </div>
+                            </Container>
                                 <p className="lead text-white">
                                     A blog full of recipes that...
                                     <ul>
