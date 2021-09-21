@@ -24,7 +24,7 @@ import "./assets/vendor/font-awesome/css/font-awesome.min.css";
 import "./assets/scss/argon-design-system-react.scss";
 
 import Index from "./views/Index.js";
-import Login from "./views/examples/Login.js"
+import Login from "./views/pages/Login.js"
 import Home from "./views/pages/Home.js";
 import Profile from "./views/examples/Profile.js"
 import Recent from "./views/pages/Recent.js";
@@ -40,9 +40,9 @@ ReactDOM.render(
         exact
         render={props => <Home {...props} />}
       />
-      <Route path="/login-page" exact render={props => <Login {...props} />} />
+      <Route path="/login" exact render={props => <Login {...props} />} />
       <Route
-        path="/profile-page"
+        path="/profile"
         exact
         render={props => <Profile {...props} />}
       />

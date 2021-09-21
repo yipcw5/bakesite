@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import {
@@ -39,7 +40,7 @@ class Home extends React.Component {
                                 <Col className="text-center" lg="6">
                                     <h1 className="display-1 mb-0 text-white">Bakesite</h1>
                                     <br/>
-                                    <Button color="neutral" size="lg" type="button">Login/Register</Button>
+                                    <Button color="neutral" size="lg" type="button" to="/login" tag={Link}>Login/Register</Button>
                                 </Col>
                             </Row>
                             </div>
